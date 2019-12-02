@@ -1,0 +1,19 @@
+Oct 20, 2019
+
+(Loops)
+
+
+(*)Programming concept which allwos us to execute certain set of block of code/statements within the given condition .
+
+(*) syntax
+for(int i=0; i<5; i++){
+	System.out.println("Happy new year")------> will print 5 times
+
+}
+
+int i = 0;----> initialization: happens only once in the beginning 
+i<5;  ---> termination condtion: when this result is false, the loop will end
+i++----> update :increase or decrease a value
+keyword---->iteration: one exection of the code inside the loop 
+what can we put inside of a loop -----( anything )
+

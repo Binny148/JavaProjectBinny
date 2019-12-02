@@ -1,0 +1,98 @@
+oct 19, 2019
+
+(*) trim
+removes any space in the beginning and end of the String.
+> takes: nothing
+returns: String
+ex:
+String str = "        Java is fun    ";
+str = str.trim()----> " Java is fun"
+Delet spaces: str.repalce(" ","");----> "Javaisfun"
+
+(*)startsWith()
+check if the string begins with the passed String
+>takes: String
+>return: boolean
+---> ex:
+String str = "Java"
+str.startsWith("Ja")---> true
+str.startsWith("ja")---> false
+str.startsWith("Java")-->true
+str.startsWith("J")---->true
+str.startsWith("Jova")---> false
+
+(*)endsWith()
+> Checkes if the String ends with the passed String
+>takes: String
+> return:boolean
+-->String str = "Java";
+str.endsWith("v")--> false
+str.endsWith("va")--> true
+
+
+(*) compareTo()
+>will compare how the passed String is related to the String being checked lexicographically 
+----> lexicographically (starts with number, alphabeticaly with uppercase then lowercase)
+> takes : String
+>returns:
+negative number : if checked String comes first
+zero: if two String
+postive number: if the passed String omes first
+
+--> Ex:
+String word = "Java";
+String world2 = "James";
+word.compareTo(word2)
+(checked).      (passed)
+
+
+
+
+convert from String to number
+String num = "1534";
+
+Integer. valueOf(String str)
+Double.valueOf(String str)
+
+int number = Integer.valueOf(num) ----> 1534
+
+
+==================================
+Nov 05, 2019
+================================
+
+(*) Method Overloading 
+-> Having multiple version of the same method in one class
+-> this allows you to have a method with the same name, but implementation ( just imagine substring method in string manuplations)
+-> Method name , number parameters , type of parameters
+-> return type is not a part of the signture 
+
+----------------------------------------------
+* Rules for overlaoding 
+
+1) Give the same name for the method 
+2) Change the number of parameter or change the datatype of the parameter 
+
+
+public static void draw (String color)
+// statement
+}
+public static void draw(String color1,String color2){
+	
+}
+public static void draw (String color1, int size){
+	
+}
+
+
+=======================================================
+BIOMEDICAL ENGINEERING SUMMERY
+=======================================================
+
+Biomedical Technician highly experienced in the management of healthcare technology providing solutions that help organizations deliver high quality patient care through timely accurate and cost - effective care . Excellent ability to understand and comprehend technical data and electrical schematics ; trained to troubleshoot to component level . Successfully accomplished BMET with 2+ years of experience in inspecting equipment and performing preventative maintenance on medical system . 
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+OCt 13,2019
+
+String are not a primitive datatype
+we call them String objects
+
+we always use double for string [" "]
+[""]---> this is called an Empty space
+-----------------------------------------------------
+
+Index: position of a character
+-- Indexes always statrt with 0 
+
+-- Every character has an index, including space and special charcater 
+int age = 0; > no index
+String age = "13"; > 2 indexes 
+
+----------------------------------------------------------
+
+Methods 
+( This is only small introduction to methods , mostly how to use them)
+
+Methods are behaviors or action or function 
+
+Methods are some kind of action that objects use 
+
+Important parts of methods : what it takes and what it returns 
+
+Example :-
+
+String str = input.nextLine();
+char  c = str.charAt(0);
+
+Argument: information that a method takes inside the parentheses
+
+We use a string and give us character 
+
+
+String s = "Java";
+String s2 = "Java is fun";
+String s3 = " Java";
+
+
+
+(*). charAt()
+ > takes: index(number)
+ > return: char
+
+ Ex: s.charAt(0)-------> 'J'
+
+ (*) equals()
+  > takes: a string
+  > returns: boolean
+  Ex: s.equals(s2)----> false
+  s.equals(s3)---------> True
+
+
+length()
+> takes: nothing 
+> return: int 
+Ex:  s.length()---> 4
+     s2.length()---> 11
+
+
+(*) isEmpty ()
+> takes: nothing 
+> return: boolean
+> checks if the string has no charcters
+
+(*) contains()
+> takes: String
+> retunrs: boolean
+> checks if the provider string is inside of the checked string 
+
+Ex: s.contains(s2)------ false
+s2.contains (s3)-------- true 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

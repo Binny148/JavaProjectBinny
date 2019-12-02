@@ -1,0 +1,14 @@
+Tutorial Nov, 18
+
+String word = "eight"
+
+if(word.length%2==1){
+	word=word.toLowerCase;
+	int mid = word.length()/2;
+	String first= word.substring(0,mid);
+	String middle= word.charAt(mid)+ " " ; // use used " " because saying put it in string mode
+	middle=middle.toupperCase();
+	String String last = word.substring(mid+1);
+	return = first +middle + last 
+
+}

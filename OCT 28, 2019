@@ -1,0 +1,738 @@
+OCT 28, 2019
+
+(*) NESTED LOOPS
+---> Nested loops are a loop inside of another loop
+
+-- Syntax:
+ for ( int i = o, i<5; i++)
+ for(int j=0; j<5;i++){
+ // statement
+ }
+
+ (*)Loop labels
+ a name that you can attach to the loop
+
+ =====================================================
+ OCt 27,2019
+ =======================================================
+
+ (*) Arrays
+
+ --Collecetions : one group that can hold multiple things of the same kind
+ we use  
+ [=] EX:
+ String name1 = " james"
+ Strig name2 = "joe"
+ String name3 = "mary"
+ String name4 = "lill"
+
+ syntax: 
+ dataType [] variableName = new dataType[size]
+ String [] names = new String[4];
+
+ dataType: can primitives or object types
+ []: syntax to show that this is an array
+
+ variableName: follows the same variables naming rules
+ new: keyword to make object
+ [size]: an intger that tells how many things the array will store 
+
+ --- each part of an array is called an element 
+ --when you make a new String array all the elements are null
+ --when you make a new int array all 
+ (*) How to store information into an array
+
+ nameOfArray[index] = value;
+ names[0] = name1;  ----> name[0] = " james"
+ name[1]. = "adam"
+
+ -->The value being stored into the array should be same datatype of the array being storing into 
+
+ - How to read information into an array
+ names[0]
+ names[0].charAt(i)---> j
+
+ --- Printing the whole array
+ System.out.println(Arrays.toString(nums))
+ ========================================================================
+
+(*) Looping through an array
+--How many interations do we need to go through the whole array
+- length() vs length
+-length()---> used to get the length of String
+--length--> used to get length of arrays (how many elemets)
+-- dynamic storing and reading in loops
+
+names[i] = "james";
+name[i]--> "james";
+
+
+==========================================
+Oct 29, 2019
+==========================================
+
+(*) for each loop
+
+------>. Collections : one object storing multiple datatypes 
+------->. This loop can only be used with collections
+-------> Thus loop is made to through each element in the colection 
+
+----> This loop Read only , which means if you only need to go through the elements and check them you can use it 
+
+
+====Syntax
+
+for( dataTypeOfElements  nameOfElements : collectionsName){
+	
+}
+
+- nameOfElements --> int num= numbers[i]
+
+===================================================================
+Oct 29, 2019
+===================================================================
+
+(*) Array class 
+- So far we used Arrays.toString()
+- Sorting an array
+- Arranging the elments in order from smallest to largest , from numbers or lexigraphically for Strings 
+
+
+
+-- Syntax 
+
+Arrays.sort(arrayName)
+
+Ex: String [] num = {   };
+
+=====================================================================
+
+Searching in an array
+-Java allows us to search for an element in an array , but only if the array is sorted .
+
+- syntax:
+
+Arrays.binarySearch(arrayName, element)
+
+Possibke result:
+
+- if the element is found in the array it will return the index of the element
+- if the element is not in the array it will return a negative number of ( index +1)
+
+- if the array as not sorted , the result is unpredictable 
+======================================================================
+
+
+(*) String manuplation 
+
+-- split()
+--> used on a String and converts the String to an String array based on the given charcaters
+- Takes: String
+-Return: String []
+
+Ex:
+
+String str = " Java is programming language";
+String [] regular = str.split(" ");
+
+--toCharArray()
+-> Takes a String and turns it into a character array
+- Takes : String
+- return
+
+
+
+==================================================================================
+NOV 2, 2019 
+
+====================================================================================
+
+(*) what are methods 
+-set of java statements in one code block
+-purpose of mothods : does some behavior or action 
+> Methods have some function
+- Note: to use the method action , you have to call the method in the main method .
+--Note : Method do not store data. They only have some action 
+
+- why we write methods : If there is an action that needs to be done many times then the method is created and called anywhere it is needed 
+-Note: There is two types of mehtod : void and return 
+-Most important parts of methods:
+1)  what does the method take 
+2) what does the method return
+
+ -- void methods: return nothing 
+ -- return type methods: return some datatype back 
+
+ (*) reules for creating methods
+
+ - Never creat a method inside of another method 
+ -This mean you can't create  a method inside of the main method 
+
+ - Give the methods a meanigful name 
+   > never statrt with uppercase or numbers
+   > Follow camelcase
+ _ One class cannot have two methods with the same name ( for now )
+
+----------------------------------------------------------------------------------------------------------
+
+(*)  Void methods 
+--> Method that does not return an value. only does an action
+
+Ex: Arrays.sort(). ---> doesn't return anything , just does an action notice we don't store anything anywhere .
+
+  public static void sayHello(){
+  Sysytem.out.println("Hi")
+ }
+
+ (*)  Data transfer : passing iformation to the method that can be used in the method
+ --- Syntax 
+
+
+ public static void printname(String name){
+ // your code here 
+ }
+
+(*) Multiple data transfer 
+
+--> Accepting multiple data in the parameters 
+
+public static void goTo(String orgin, String newLocation){
+	
+}
+-----------------------------------
+Nov 3 , 2019
+===================================
+(*). Return type methods 
+
+- Method that give a single value back to the user 
+
+> The value given back should match the datatype that is provided in the method declartion 
+- instead of void keyword we need to have the datatype that we expect the method to give 
+- Keyword: return 
+
+-> return type method needs to use this keyword to give a value 
+-> without this return statement there will be a syntax error
+-> return statement value needs to match the datatype given as the return type of the method 
+ -> After excuting a return statement the method ends 
+ > Any code after a return statement is unreachable 
+
+--- Syntax:
+
+public static int getThree() {
+	
+}
+public static void main(String [] args){
+	int a = getThree();
+	return 3;
+}
+
+public static void main(String [] args) {
+	int a = getThree();
+}
+
+-- Note: you can have multiple return statements in the method, but only with execution control via if or switch statement 
+
+
+  }
+
+
+=========================================================================================================================
+NOV 23, 2019
+=========================================================================================================================
+
+IQ:
+this vs this()
+this referring to an object. we use it for instance variables and methods.
+this()----> referring to the constructors
+
+ArrayList ----> part of colllection framework .
+Collection frameowrk comes from java . It helps us to work with many data in one place .
+
+ArrayList - is resizable . we don't have to worry about setting the size and maintaning the size . Each time we add or remove the items, ArrayList automatically resizes its size by itself.
+
+* ArrayList can ONLY store object types.It cannot store primitives.
+
+* There is a way to store all primitives datatype in ArrayList . For that we use wrapper classes .
+
+* It works with indexes and ordered.
+It allows to store duplicates just like Array.
+* It also allows to store different data types, however it is highly recommeneded to store one type.
+
+* Storing different datatypes in the ArrayList can be used in littel complex programming.
+
+Syntax;
+
+ArrayList<String> names = new ArrayList<>();
+
+add=> Overload method. It's used to add an element to the list.
+
+1. we add the element and it adds to the end of the list by default
+2. we add the element and we specify the index(postion) of the list.
+And  it adds to the specified index.
+
+--> get +. it is used to get/fetch the elemnt from the list. It takes one parameter . Index.
+
+=============================================================================================
+CUSTOM CLASS MEMBERS
+=============================================================================================
+
+Instance variables
+-Information that belongs to each object which is created from the specific class.
+-In order use instance variables you MUST have an object 
+
+(2). Methods
+_Behaviors that belongs to each Object
+
+(3) Constructors
+-Special kind of method that creates an object 
+--------------------------------------------------------------------------------------------
+(*). Static memeber
+--> variables and methods can be static 
+
+--> Static members belongs to the class. Not the object.
+
+----> This mean that you don't need to creat object to use those memebers .so they are shared with all object
+
+--> example of static method from Java 
+  --> Don't need this: Array arr = new Arrays()
+
+--  Arrays.sort()
+--Arrays.toString()
+
+--> Example of non static method from Java
+  --nextLine() from Scanner 
+  --trim() from String class
+  --nextInt() from Random class
+
+---------------------------------------------------------------------------------------------------
+
+(*) Static block
+
+   --> Also known as the static initializer 
+   --> This block is used to give intital values to static memeber 
+
+  --Syntax:
+
+     static {
+
+       // statements
+
+     }
+
+--Rules:
+
+   --> This block will run once and before anything else
+   --> Static blocks can only have static memeber 
+   -->you can have as many static blocks are you want . They will read top to bottom.
+
+-Interview Question (IQ); Do you have to give default static memeber in the static block?
+No, but usually it used for default values .
+
+====================================
+(*)Static import 
+--> If you want to import a static member to your class you can import memeber instead of the whole class
+
+(*)For testing 
+
+--> utilities pacage: package that will have classes that are helpful for the project
+
+--> Most method behave like a tool
+
+-The method in utility class are static 
+
+-----------------------------------------------------------------------------------------------------------
+
+NOV 30, 2019
+==============================================================================
+Object vs Class
+*Blueprint , structure templete for an object 
+
+the informaion that object has called instance variable .
+
+class Mouse
+
+
+
+
+
+//Instantiation an object of mouse
+// mm1 and m2 are referance for Mouse object
+Mouse m1 = new Mouse();
+Mouse m2 = new Mouse();
+
+//assignment for instance variable color
+m1.color = "White";
+sout(m2.color);===> null . Because m2 never assigned value to the color.
+//reference reassignement for m2
+// At this point both m2 and m1 is pointing to one object because 
+//m1 gave its refeance to m2. Both m1 and m2 hold the same refrance number
+Mouse m3=m2;
+m2=m1.  ===> now we lost m2 because m2 become m1
+sout(m2.color);
+
+
+Ststic is a memeber of a class that doesnt belongs to object.
+
+
+--> both variables and methods can be a static . when they are static they belongs to a class and they can be called by class name. We dont need an
+object to use them.
+
+Static is not a part of object , it's part of a class.
+
+class Walmart{
+	
+String address;
+double size;
+int numOfEmployees;
+String type;
+Static ceo;
+
+}
+
+Walmart w1= new Walmart();
+Walmart w2 = new Walmart();
+Walmart w3 = new Walmart();
+
+
+Access to static memeber :
+1. You DON't need an object to get access
+2.Both objects and class itself have an access to the static memeber 
+
+
+w1.ceo = "Mr.Doug";
+sout(w3.ceo);==> Mr.Doung
+
+
+Method
+2 perspectives 
+
+1. Creating method
+EX; when creating a utility classess you create your own method 
+ what so we need from user?
+ -size of the random number.
+
+ what user wants from us ?
+ - random numbers up to 1000 list size of given size.
+
+ method welcomeUser.
+
+ what do we need from user?
+ = user name and last name
+
+ what user wnats from us?
+ -just show good welcome message for the user
+
+ public static void welcomeUser(String firstName, String lName){
+
+
+ }
+
+
+2. Using method
+Ex: Whenever you use any method in your programming.
+Arrays.sort() is using someone's method
+String manuplation method: length(), substring , indexOf , CharAt
+
+you look at 2 things when using / calling/invoking the method
+
+a. what does the method take?
+b.what does the method return?
+
+EX;
+String name = "Jason";
+name.charAt(2);
+
+char c = name.charAt(2);
+
+===========================
+DECEMBER 01,2019
+===========================
+FINAL , MEMORY MANAGEMANT 
+
+==>  Final keyword can be applied to varibale  , methods and class.
+
+---> Final variable:
+     when 'final' keyword is applied to variable , that variable value can't be reassighned.
+
+     EX; int i=5;
+     i = 12;
+
+     final int k =6; ==> variable 'k' cannot be changed anymore , because of final
+     k = 32; ===> Java WON't Allow
+
+
+Final varaiable are also know as constant variable .
+Final varaiables are used for things that should't be changed.
+Ex: pi===> double pi=3.14
+
+
+local variables -- declared within the scope of methods or any curly braces. They can be used only within that scope.
+what is the default value for loacl variables ?
+-No deafult value for local varaibles .
+-programmer must intlailize local varaiables before using it .
+
+=========================
+MEMORY MANGEMENT IN JAVA
+=========================
+
+There are two places that Java uses from RAM memeory.
+
+1. Stack
+  - primitive datatype information 
+  EX: int age = 23;
+  boolean raning = true;
+
+  - referances 
+  EX: Bag bag1 = new Bag();
+  bag1 is stored in the stack
+
+  -method calls
+  EX: MyCollection.getStringList();
+
+2. Heap
+  -All objects stored in the heap
+  -----------------------------------------------------------------------------------------------------------------
+
+
+stackOverFlowError: This error is thrown by Java when stack memory is out of memory.
+
+All String are stored in the Heap memory.
+
+-String : combination of characters
+
+Memory: char size. 2 bytes => 16bit.
+
+String name = "Jason"; ==> 80bits
+
+
+String pool - It is a memory corner in the Heap, where unique String valuses are stored .
+
+== vs. .equals()
+== -> is used to compare values that are stored in stack.
+
+if we use it for primitives then it compares the values.
+If we use it for referance then it compares the adresses they hold .
+
+
+.equals() => method that compares the value not refreances 
+
+GC ---> Garbage Collection 
+
+It is tool of java that cleans the heap memory automatically.
+
+what does it clean?
+
+- It cleans the object that are no longer haning a referance to.
+
+EX: 
+
+String s = "James";
+s="Bond"; 
+
+"James" will be colllected and by Garbage collector 
+
+-Garbage collector will clean up the memory implicitly.
+-However, if you would like to call it explicitly you can do so using system.gc();
+
+
+-when we call System.gc() or when it gets called by itself, it executes finalize() method for a dying object for a last time.
+
+-Normally programmers use finalize() method to do proper clean up .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

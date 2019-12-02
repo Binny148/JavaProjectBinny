@@ -1,0 +1,29 @@
+Oct 12 ,2019
+
+=> Reading your code line by line 
+- Code tracing 
+* If-Else statements: statements that decide the program flow to trun based on the condirtion we are checking against 
+
+Syntax:
+
+if( condition) {
+// some code to execute when condition is true
+}
+ * condition => must be a statement that returns boolean datatype
+
+* Q : Can " if " statement be used alone without "else" statments?
+-yes
+
+* else-if statement:  this statemnt is used when we have few conditions to check before we use " else statement"
+
+syntax
+if(condition) {
+// code
+
+}
+else if
+-----------------------------------------------------------------------
+
+
+
+

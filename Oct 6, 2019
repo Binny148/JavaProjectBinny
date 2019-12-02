@@ -1,0 +1,87 @@
+Oct 6, 2019
+
+1. PRIMITIVE DATA IN JAVA 
+
+Byte
+short
+int---------> we more focus on int 
+long
+float
+double
+char----->Ex , . ! % h 2 5 , put it in ' '
+boolean---> true or false 
+String===> Not in Primitives , because it starts with Capital letters .
+
+2. TYPE CASTING
+If you are transfering from smaller container to bigger container , you can smilpy assign right away
+Ex: int age = 24;
+
+long  age2= age;
+
+* Complation error : when your code won't compile successfully IntelliJ willndetect and tell you .
+
+* If you are transferring from bigger container to smaller contariner , you must Explicitly cast it .
+
+
+EX;  int age = 25;
+
+short s = age;====>
+
+
+
+3. ARTHEMTIC OPEARTORS 
+
+-,+,/,*,%
+
+Ex:10/3 = 3
+10%3=1;
+Remainder/modulus
+
+
+4.PRINT STATEMENT 
+
+System.out.print();
+System.out.println();
+
+
+
+5. CONCATINATION
+
+adding , combine 
+String name = "James";
+System.out.println("Hey! My name is " _ name );
+
+6. STRING -----> object datatype that can store bunch of letters or number or any other character 
+
+7. ASSIGNMENT , DECLARTION
+
+Statement :  one line of code that ends with semi colon
+
+--------------------------------
+
+Shorthand assignment opeartions
+
+------------------------------
+
+
+when you want to increment or decrement the values of numbers by certain amount you can always use shorthand  assignement opeartions.
+
+
+EX: 
+
+int age = 25 
+
+age = age +11;
+
+age += 11;
+
+
+
+8. INTELLIJ
+--> IDE ---. INTEGRATED DEVELOPMENT ENVIRONMENT 
+Java project
+
+the palce where all your java codes, application stored 
+github--> github.com=> the palce where you find my codes 
+
+

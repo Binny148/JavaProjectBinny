@@ -1,0 +1,109 @@
+Nov 16,2019 class and object 
+
+Java allows us to creat objects in computer using classes.
+
+class---> type or blueprint for an object 
+
+Datatypes in Java
+
+1. Primitive 
+--> EX: int i = 6;
+->primitive datatype are able to s store only one pecie of info.
+2.Object 
+
+--> object datatype are able to store many pieces of infmroartion .
+--> object types are able to store not only pieces of infmroation , but they can store behviores of objects.
+
+We can creat objects using classes 
+
+1. We have to creat a class and set the rules for it .
+2. Creat an object from it .
+
+
+String name = "James";
+
+* Class has two things
+
+1. Data fields, attributes , instance varibales , properties 
+2. Behaviors , methods .
+
+EX: 
+public class dog{
+	
+	String name;
+	int age;
+	String color;
+	double weight;
+	String breed;
+
+	public void bark(){
+
+	System.out.println("Dog is barking ");
+
+    } 
+}
+
+Class vs Object 
+
+* Clas is a type that specifies the instance variables and behaviors. We can say that class is a template or blueprint 
+
+* Object:an actual object that got created by the class . Multiple objects can be created by one class.
+
+Creating an object:
+
+- We use 'new ' Keyword everthime we creat an object .
+-instantiate ---> creat an object 
+- object or instance 
+
+
+*** By default when we have local variable same as instance variable , it uses local variable within the method .
+
+=========================================================
+Constructor
+==========================================================
+
+--> Special method that is used to creat an object.
+==> It is NOT a method
+==> It must have same name as class.
+==> what does it do ?
+--> It creates an object 
+==> Do we have to creat a constructor ?
+No. If you don't creat one , then Java creates one for you .
+==> Every single class have a constructor 
+--> you don't see one if you don't creat one.
+--> Because default constructor is hidden , but it's there .
+
+--> What kind of code is written inside the constructor?
+
+* To set intial state of object 
+
+If programmer doesn't creat one constructor then Java creates constructor by itself. This constructor is called DEFAULT CONSTRUCTOR . Default constructor is hidden and it does not take any argument . ( No parameters).
+
+* However, we can creat a constructor that takes some argument. And we can use those arguments(parameters) to set intial values for a newly created object.
+
+* If you create one constructor yourself, NO MORE defualt constructor is provided by Java .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

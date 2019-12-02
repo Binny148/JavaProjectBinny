@@ -1,0 +1,148 @@
+Oct 16, 2016
+
+(*)
+
+Index is the position of character in the given String
+The index always starts 0
+Every character has an index including special charcater and spaces !@#$
+
+(*) Method
+Methods are behaviors / actions done to objects
+Strings are something callled objects
+
+Most important part of methods are what it takes and what it retuns 
+
+Argument is the information that the method takes
+
+----------------------------
+(*) Method example:
+String str = " My favorite fruit is an apple"
+String fruit = "ornage";
+String word = "My";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================================
+
+(*) How to always get to the last index of a String 
+String word = "We should take a trip";
+int last = word.length() -1;
+char lastChar = word.charAt(last) --> 'p'
+----------------------------------------------
+
+New methods
+(*) equalsIgnoreCase()
+similar to equals method but ignore the cases
+takes: String
+return boolean
+ex:
+
+String str = "Java";
+str.equalsIgnoreCase("java")--> true
+
+(*)indexOf()
+
+> gives the index of the passed string(first occurance)
+
+if the given string is not found the object string the result is -1
+
+takes: String
+return: int (index)
+ex:
+
+String str = "Java"
+str.indexOf("va")--> 2
+str.indexOf("a")---> 1
+str.indexOf("vo")----> -1
+
+(*) lastIndexOf()
+>smilar of indexOf method , except it gives the last occyrance of the String
+
+> ex:
+
+String str = "Java"
+str.lastIndexOf("a")----> 3
+
+Note: The following methods will need assigned to a new variable or resigned to the existing one OR use the result right away
+
+
+(*) toLowerCase()
+will trun all characters in the string to lowercases
+>will trun all characters in the string to  lowercase
+take: String
+> return String
+ex:
+String str = "Java";
+str = str.tolowerCase()----> "java"
+
+(*) toUpperCase()
+will trun all characters in the string to lowercases
+>will trun all characters in the string to  lowercase
+take: String
+> return String
+ex:
+String str = "Java";
+str = str2.tolowerCase()----> "JAVA"
+
+(*) repalce()
+> Give back a string with every occurnace of the old character repalce with the caracter 
+> takes : two char ( oldChar, newChar)
+return: String
+ex:
+String str = "Java"
+str= str.repalce('a','0')---> Jovo
+
+
+(*) Substring
+>Give back part of a String based on the given index
+takes: int(index)
+return:String
+
+ex:
+
+String str = "Java"
+String str2 = str.substring(2)---> "va"
+String str3 = str.substring(3)---> "a"
+
+
+(*) substring()
+> takes: two numbers/ indexes ( start, end)
+returns: String in that range - NOT include the last index
+ex:
+String str = "Java";
+str = substring(1,3)-----> "av"
+
+
+
+
+
+
+
+
+
