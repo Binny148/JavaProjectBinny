@@ -539,6 +539,15 @@ s="Bond";
 
 -Normally programmers use finalize() method to do proper clean up .
 
+------------------------------------
+
+Final Variables
+Stack vs Heap
+String pool
+Garbage collector 
+
+
+
 
 
 

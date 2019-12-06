@@ -12,3 +12,11 @@ if(word.length%2==1){
 	return = first +middle + last 
 
 }
+
+=========================================================
+Nov 20,2019
+=========================================================
+- check if an object is null
+obj==null
+-When there is intance varibale and local varibales with the same name, java will always use the local variable first
+> use this keyword 

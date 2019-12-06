@@ -29,7 +29,6 @@ str.startsWith("Jova")---> false
 str.endsWith("v")--> false
 str.endsWith("va")--> true
 
-
 (*) compareTo()
 >will compare how the passed String is related to the String being checked lexicographically 
 ----> lexicographically (starts with number, alphabeticaly with uppercase then lowercase)
@@ -84,12 +83,101 @@ public static void draw (String color1, int size){
 	
 }
 
+-- If your overload a method a successfully you can change the return type
 
-=======================================================
-BIOMEDICAL ENGINEERING SUMMERY
-=======================================================
+IQ: Does changing the return type overload the method?
+-No .Return type is not part of the method signature , in this case you also confuse java.
 
-Biomedical Technician highly experienced in the management of healthcare technology providing solutions that help organizations deliver high quality patient care through timely accurate and cost - effective care . Excellent ability to understand and comprehend technical data and electrical schematics ; trained to troubleshoot to component level . Successfully accomplished BMET with 2+ years of experience in inspecting equipment and performing preventative maintenance on medical system . 
+(*) Datatype parameter promotion 
+byte->short->int->float/long->double 
+
+=============================================================================
+Nov 06, 2019
+==========================================================================
+
+(*) Varargs --> variable arguments
+
+-> using varargs allows you to pass an array as the argument without having to creat an array first >
+
+> The elements are passed in paramters
+public static void main(String [] args){
+	printArray(3,2,34,4)
+
+}
+
+--syntax:
+
+public static void print ( int ... arr){
+
+	//your code here 
+
+}
+
+
+
+
+================================================================================================================
+Nov 12, 2019
+================================================================================================================
+
+(*) Review :
+--> Arrays are one type of collection . They store multiple infrmation of the same kind . The datatype provided in the array declaration .
+
+--> Arrays can store primitive datatype and object datatypes
+ > primites : int array
+ > object: String array 
+
+--> Recall: Arrays are also objects
+> This means Arrays should be able to hold other arrays .
+
+(*) what is a multi dimentianl arrays
+> an arrays inside of an array 
+
+Syntax
+
+datatype [][] varName = new datatype [sizeOf2Darrays] [];
+
+
+int [] [] group = new int [4][];
+
+--> groups is a 2D int array that can hold four int arrays inside of it . The size of the inner int arrays is not declared.
+
+--> After declaration of this 2D array all the values will be null.
+
+
+(*) Notes: when you declare a 2D array , the inner arrays sizes do not need to be given
+> This means the inner arrays can have different number of elements 
+
+
+-- How to print multi dimentional arrays 
+> Arrays.deepToString()
+
+------------------------------------------------------------------
+
+int [] [] numbers = {{1,2,3} , {4,5,6}, {7,8,9}}
+
+> numbers is holding 3 inte with 3 elements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

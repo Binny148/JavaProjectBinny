@@ -17,3 +17,31 @@ i++----> update :increase or decrease a value
 keyword---->iteration: one exection of the code inside the loop 
 what can we put inside of a loop -----( anything )
 
+Each part of the loop is optional 
+
+-Inginite loops:
+
+>concept when the loop does not have a stopping point or when the termination condition is never met 
+
+for( ; ;){
+	
+}
+
+for(int i=0; i > -1;){
+	// statement 
+}
+
+(*) Note: how many times to iternate through a String
+----> length times
+(*) Note: How to get each character:
+
+charAt(index)
+
+========================================================================
+-Break; this is keyword used within the loop to stop the loop
+-
+
+
+
+
+
