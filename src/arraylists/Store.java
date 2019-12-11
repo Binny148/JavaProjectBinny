@@ -49,10 +49,13 @@ public class Store {
 
     }
     /*
-    Creat method sellItem. Method accepts name of the Item and doesn't return anything. Check if the name of the item is in the list.
-    If it's in stock remove from the list and add the price to totalSales and give sucess transaction message. If doesn't exist in the
+    Creat method sellItem. Method accepts name of the Item and doesn't return anything.
+     Check if the name of the item is in the list.
+    If it's in stock remove from the list and add the price to totalSales and give sucess transaction message.
+    If doesn't exist in the
     list give failed transaction message and terminate the method.
     */
+
     public void sellItem(String itemName){
          for ( int i =0; i<item.size(); i++){
     if(item.get(i).name.equals(itemName)){
